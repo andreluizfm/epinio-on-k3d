@@ -1,2 +1,4 @@
 venv/
 .venv/
+jmeter.log
+stats.xml
