@@ -1,0 +1,17 @@
+name: orders
+configuration:
+  configurations:
+    - xd0ebbbdce32474db8141d23d2c01-rabbitmq
+    - xfc848c316af1a89d49826c5ae9d0-postgresql
+  environment:
+    DB_PASSWORD: "replace_with_postgres-password_value"
+    DB_USER: "postgres"
+    DB_HOST: "xfc848c316af1a89d49826c5ae9d0-postgresql"
+    DB_NAME: "postgres"
+    RABBIT_PASSWORD: "replace_with_rabbitmq-password_value"
+    RABBIT_USER: "user"
+    RABBIT_HOST: "xd0ebbbdce32474db8141d23d2c01-rabbitmq"
+    RABBIT_PORT: "5672"
+    RABBIT_MANAGEMENT_PORT: "15672"
+origin:
+  container: nameko/nameko-example-orders

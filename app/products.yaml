@@ -1,0 +1,17 @@
+name: products
+configuration:
+  configurations:
+    - xd0ebbbdce32474db8141d23d2c01-rabbitmq
+    - x840fc02d524045429941cc15f59e-redis
+  environment:
+    REDIS_HOST: "x840fc02d524045429941cc15f59e-redis-master"
+    REDIS_PORT: "6379"
+    REDIS_INDEX: "11"
+    REDIS_PASSWORD: "replace_with_redis-password_value"
+    RABBIT_PASSWORD: "replace_with_rabbitmq-password_value"
+    RABBIT_USER: "user"
+    RABBIT_HOST: "xd0ebbbdce32474db8141d23d2c01-rabbitmq"
+    RABBIT_PORT: "5672"
+    RABBIT_MANAGEMENT_PORT: "15672"
+origin:
+  container: nameko/nameko-example-products
